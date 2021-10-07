@@ -1,0 +1,487 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- Encore beaucoup utilisé -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+		<title>Portfolio développeur web | Amir Dahmouni </title>
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-91026090-1', 'auto');ga('send', 'pageview');
+        </script>
+	</head>
+	<body>
+        <div class="uk-position-relative " id="home">
+            <div class="uk-background-cover uk-light uk-flex uk-flex-column" style="background-image: url('Images/bg.jpg'); height: 80vh;">
+                <div class="uk-text-center uk-margin-auto uk-margin-auto-vertical uk-width-1-2@s uk-padding-small captionHeader">
+                    <h1>Amir Dahmouni</h1>
+                    <p class="uk-text-lead text-white">
+                        Développeur web full stack javascript 
+                        parfaitement à l’aise avec le HTML,CSS,JavaScript et le
+                        développement d’application web.
+                        Passionné du monde numérique, autodidacte et
+                        toujours à l'affût de l’actu web.
+                        </p>
+                </div>
+            </div>
+            <div class="uk-position-top">
+                <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: nav-scroll-background; cls-inactive: uk-navbar-transparent uk-light; top: 200">
+                    <!--  Menu pour largeur ecran > 960px -->
+                    <nav class="uk-navbar-container uk-visible@m" uk-navbar style="position: relative">
+                        <div class="uk-navbar-left">
+                            <ul class="uk-navbar-nav">
+                                <li class="uk-navbar-item "><a href="#home">Home</a></li>
+                                <li class="uk-navbar-item"><a href="#parcours">Parcours</a></li>
+                                <li class="uk-navbar-item"><a href="#competences">Compétences</a></li>
+                                <li class="uk-navbar-item"><a href="#realisations">Réalisations</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+                <div uk-sticky="animation: uk-animation-slide-top; sel-target: #menu; cls-active: nav-scroll-background; cls-inactive: uk-navbar-transparent uk-light; top: 200">
+                    <!--  Menu pour largeur ecran < 960px -->
+                    <nav class="uk-navbar uk-navbar-container uk-box-shadow-medium uk-hidden@m" id="menu" uk-navbar>
+                        <div class="uk-navbar-left">
+                            <a class="uk-navbar-toggle" href="#" uk-toggle="target: #menu-mobile" uk-navbar-toggle-icon></a>
+                        </div>
+                    </nav>
+                    <div class="uk-offcanvas-content">
+                        <div id="menu-mobile" uk-offcanvas="mode: push; overlay: true">
+                            <div class="uk-offcanvas-bar">
+                                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                                <ul class="uk-nav uk-nav-default">
+                                    <li class="uk-navbar-item"><a href="#home">Home</a></li>
+                                    <li class="uk-navbar-item"><a href="#parcours">Parcours</a></li>
+                                    <li class="uk-navbar-item"><a href="#competences">Compétences</a></li>
+                                    <li class="uk-navbar-item"><a href="#realisations">Réalisations</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-section uk-section-muted uk-preserve-color" id="parcours">
+            <div class="uk-container">
+                <div class="uk-panel  uk-margin-medium">
+                    <h3 class="uk-margin-medium uk-text-center uk-heading-small">Mon parcours</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="direction-l">
+                            <div class="flag-wrapper">
+                                <span class="hexa"></span>
+                                <span class="flag">Stage Technicien Proxym-IT</span>
+                                <span class="time-wrapper"><span class="time">Aout 2021</span></span>
+                            </div>
+                            <div class="desc">
+                                Développement complet d’une application web de gestion ressource humaine
+                                (congés,poistion,departement...)
+                                Nest.js GraphQL MongodB React.js Apollo Redux
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="direction-r">
+                            <div class="flag-wrapper">
+                                <span class="hexa"></span>
+                                <span class="flag">2 éme année</span>
+                                <span class="time-wrapper"><span class="time">2020-2021</span></span>
+                            </div>
+                            <div class="desc">2éme année cycle ingénieur Genie Logiciel (notion des middlewares,design pattern,méthodes agiles)</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="direction-l">
+                            <div class="flag-wrapper">
+                                <span class="hexa"></span>
+                                <span class="flag">Stage ouvrier Genext-IT</span>
+                                <span class="time-wrapper"><span class="time">Juillet 2020</span></span>
+                            </div>
+                            <div class="desc">
+                                Développement complet d’une application web afin d'inviter les étudiants par mail
+                                à donner leur degré de satisfaction par un questionnaire
+                                Node.js Express.js React.js MongoDb
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="direction-r">
+                            <div class="flag-wrapper">
+                                <span class="hexa"></span>
+                                <span class="flag">2 éme cycle</span>
+                                <span class="time-wrapper"><span class="time">2019-2020</span></span>
+                            </div>
+                            <div class="desc">1 ère année cycle ingénieur en informatique.</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="direction-l">
+                            <div class="flag-wrapper">
+                                <span class="hexa"></span>
+                                <span class="flag">Code académie</span>
+                                <span class="time-wrapper"><span class="time">2017-2019</span></span>
+                            </div>
+                            <div class="desc">2 ans cycle préparatoire intégrée IssatSo (math-physique-informatique)</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="direction-r">
+                            <div class="flag-wrapper">
+                                <span class="hexa"></span>
+                                <span class="flag">BAC INFO</span>
+                                <span class="time-wrapper"><span class="time">2016-2017</span></span>
+                            </div>
+                            <div class="desc">Baccalauréat Informatique ,
+                                Etude avancés en algorithmique et manipulation de la base de données relationnelle Mysql,
+                                projet fin d'année site web HTML5 CSS3 PHP native
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="uk-text-center uk-margin-large">
+                    <a class="uk-button button-primary" href="./PDF/cv-Amir.pdf">mon cv pdf</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-section background-color-primary uk-preserve-color" id="competences">
+            <div class="uk-container">
+
+                <div class="uk-light uk-margin-medium uk-text-center">
+                    <h3 class="uk-margin-medium uk-text-center uk-heading-small">Mes compétences</h3>
+                </div>
+
+                <div class="uk-grid-match uk-child-width-expand@m" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-header">
+                                <h3 class="uk-card-title uk-margin-remove-bottom">Front-End</h3>
+                            </div>
+                            <div class="uk-card-body">
+                                <div class="uk-grid uk-child-width-auto languageCardBody">
+                                    <div class="uk-text-center uk-width-expand@s">
+                                        <img src="Images/html5.png" alt="logo HTML5"/>
+                                        <div class="uk-text-uppercase uk-margin-medium-top">
+                                            <p>html 5</p>
+                                        </div>
+                                    </div>
+                                    <div class="uk-text-center uk-width-expand@s">
+                                        <img src="Images/css3.png" alt="logo CSS3"/>
+                                        <div class="uk-text-uppercase uk-margin-medium-top">
+                                            <p>css 3</p>
+                                        </div>
+                                    </div>
+                                    <div class="uk-text-center uk-width-expand@s">
+                                        <img src="Images/javascript.png" alt="logo JavaScript"/>
+                                        <div class="uk-text-uppercase uk-margin-medium-top">
+                                            <p>javascript</p>
+                                        </div>
+                                    </div>
+
+                                    
+                                    <div class="uk-text-center uk-width-expand@s">
+                                        <img src="Images/react.png" alt="logo React"/>
+                                        <div class="uk-text-uppercase uk-margin-medium-top">
+                                            <p>React.js</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="uk-text-center uk-width-expand@s">
+                                            <img src="Images/redux.png" alt="logo Redux"/>
+                                            <div class="uk-text-uppercase uk-margin-medium-top">
+                                                <p>Redux</p>
+                                            </div> 
+                                    </div>
+
+                                    <div class="uk-text-center uk-width-expand@s">
+                                        <img src="Images/apollo.png" alt="logo apollo"/>
+                                        <div class="uk-text-uppercase uk-margin-medium-top">
+                                            <p>Apollo</p>
+                                        </div> 
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uk-grid-match uk-child-width-expand@m" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-header">
+                                <h3 class="uk-card-title uk-margin-remove-bottom">Back-End</h3>
+                            </div>
+                            <div class="uk-card-body">
+                                <div class="uk-grid uk-child-width-auto languageCardBody">
+                                    <div class="uk-text-center uk-width-expand@s">
+                                        <img src="Images/nodejs.png" alt="logo node"/>
+                                        <div class="uk-text-uppercase uk-margin-medium-top">
+                                            <p>Node.js</p>
+                                        </div>
+                                    </div>
+                                    <div class="uk-text-center uk-width-expand@s">
+                                        <img src="Images/expressjs.png" alt="logo expressjs"/>
+                                        <div class="uk-text-uppercase uk-margin-medium-top">
+                                            <p>express.js</p>
+                                        </div>
+                                    </div>
+                                    <div class="uk-text-center uk-width-expand@s">
+                                        <img src="Images/graphql.png" />
+                                        <div class="uk-text-uppercase uk-margin-medium-top" alt="logo graphql">
+                                            <p>GraphQL</p>
+                                        </div>
+                                    </div>
+                                    <div class="uk-text-center uk-width-expand@s">
+                                        <img src="Images/typescript.png" alt="logo typescript"/>
+                                        <div class="uk-text-uppercase uk-margin-medium-top">
+                                            <p>typescript</p>
+                                        </div>
+                                    </div>
+                                    <div class="uk-text-center uk-width-expand@s">
+                                        <img src="Images/nestjs.png" alt="logo nest"/>
+                                        <div class="uk-text-uppercase uk-margin-medium-top">
+                                            <p>nest.js</p>
+                                        </div>
+                                    </div>
+                                    <div class="uk-text-center uk-width-expand@s">
+                                        <img src="Images/socket.png" alt="logo socket"/>
+                                        <div class="uk-text-uppercase uk-margin-medium-top">
+                                            <p>socket.io</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="uk-text-center uk-width-expand@s">
+                                        <img src="Images/nodemailer.png" alt="logo nodemailer"/>
+                                        <div class="uk-text-uppercase uk-margin-medium-top">
+                                            <p>Nodemailer</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uk-grid-match uk-child-width-expand@m" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-header">
+                                <h3 class="uk-card-title uk-margin-remove-bottom">Base de données</h3>
+                            </div>
+                            <div class="uk-card-body">
+                                <div class="uk-grid uk-child-width-auto languageCardBody">
+                                    <div class="uk-text-center uk-width-1-6@s">
+                                        <img src="Images/mysql.jpg" alt="logo MySql"/>
+                                        <div class="uk-text-uppercase uk-margin-medium-top">
+                                            <p>mysql</p>
+                                        </div>
+                                    </div>
+                                    <div class="uk-text-center uk-width-1-6@s">
+                                        <img src="Images/mongodb.png" alt="logo MongoDB"/>
+                                        <div class="uk-text-uppercase uk-margin-medium-top">
+                                            <p>mongodb</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uk-grid-match uk-child-width-expand@m" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-header">
+                                <h3 class="uk-card-title uk-margin-remove-bottom">Autre</h3>
+                            </div>
+                            <div class="uk-card-body">
+                                <div class="uk-grid uk-child-width-auto  languageCardBody">
+                                    <div class="uk-text-center uk-width-expand@s">
+                                        <img src="Images/postman.png" alt="logo postman">
+                                        <div class="uk-text-uppercase uk-margin-medium-top">
+                                            <p>postman</p>
+                                        </div>
+                                    </div>
+                                    <div class="uk-text-center uk-width-expand@s">
+                                        <img src="Images/DevTools.png" alt="logo DevTools">
+                                        <div class="uk-text-uppercase uk-margin-medium-top">
+                                            <p>Redux-DevTools</p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="uk-text-center uk-width-expand@s">
+                                        <img src="Images/github.png" alt="logo Github">
+                                        <div class="uk-text-uppercase uk-margin-medium-top">
+                                            <p>github</p>
+                                        </div>
+                                    </div>
+                                   
+                                   
+                                    <div class="uk-text-center uk-width-expand@s">
+                                        <img src="Images/linux.png" alt="logo Linux">
+                                        <div class="uk-text-uppercase uk-margin-medium-top">
+                                            <p>linux</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-section uk-background-cover uk-section-muted" id="realisations" >
+            <div class="uk-container">
+                <div class="uk-margin-medium uk-text-center">
+                    <h3 class="uk-margin-medium uk-text-center uk-heading-small">Mes réalisations</h3>
+                </div>
+
+                <div uk-slider="center: true">
+                    <div class="uk-position-relative uk-visible-toggle uk-light sliderRealisations" tabindex="-1">
+                        <ul class="uk-slider-items uk-child-width-1-2@s uk-grid" uk-height-match="target: > li > .uk-card">
+                            <li>
+                                <div class="uk-card uk-card-default uk-box-shadow-medium">
+                                    <div class="uk-card-media-top">
+                                        <img src="Images/wizdeo_analytics.png" alt="image site web Wizdeo Analytics">
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title ">Wizdeo Analytics</h3>
+                                        <p>Outils d’analyse des données de chaînes ou compte YouTube, Facebook, Instagram et Twitter.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default uk-box-shadow-medium">
+                                    <div class="uk-card-media-top">
+                                        <img src="Images/wizapi.png" alt="image site web WizApi">
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title ">WizAPI</h3>
+                                        <p>API REST de l’outil Wizdeo Analytics.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default uk-box-shadow-medium">
+                                    <div class="uk-card-media-top">
+                                        <img src="Images/copyrights_royalties.png" alt="image site web Revenus de droits d'auteur">
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title ">Revenus de droits d'auteur</h3>
+                                        <p>Site d’inscription des ​ créateurs YouTube​ au service de droit d'auteur proposé par Wizdeo.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default uk-box-shadow-medium">
+                                    <div class="uk-card-media-top">
+                                        <img src="Images/talents.png" alt="image site web Wizdeo Talents">
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">Wizdeo Talents</h3>
+                                        <p>Portfolios de de créateurs YouTube travaillant avec Wizdeo destinée aux marques et agences recherchant un ou plusieurs profils pour leur campagne de promotion.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default uk-box-shadow-medium">
+                                    <div class="uk-card-media-top uk-text-center" >
+                                        <img src="Images/wizapp.png" alt="image application mobile WizApp">
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title ">WizApp</h3>
+                                        <p>Application mobile de proposition et suivie de campagne promotionnelle destinée aux créateurs
+                                            partenaire de Wizdeo.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default uk-box-shadow-medium">
+                                    <div class="uk-card-media-top">
+                                        <img src="Images/mustapha_laabid.png" alt="image site web Mustapha LAABID">
+                                    </div>
+                                    <div class="uk-card-body ">
+                                        <h3 class="uk-card-title">Mustapha LAABID</h3>
+                                        <p>Développement d’un CMS en Symfony 3 pour Mustapha LAABID (député de la première circonscription d’Ille et Vilaine).</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default uk-box-shadow-medium">
+                                    <div class="uk-card-media-top">
+                                        <img src="Images/boue.png" alt="image la bouée corsaire">
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">Bouée corsaire</h3>
+                                        <p>la Bouée corsaire est une application web développée par la Code Académie qui permet de s'échanger des services contre du temps.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default uk-box-shadow-medium">
+                                    <div class="uk-card-media-top">
+                                        <img src="Images/asrac.png" alt="image asrac">
+                                    </div>
+                                    <div class="uk-card-body ">
+                                        <h3 class="uk-card-title">Asrac</h3>
+                                        <p>Site vitrine d'une association Rennaise développé au sein de la code académie.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default uk-box-shadow-medium">
+                                    <div class="uk-card-media-top">
+                                        <img src="Images/cmsYou.png" alt="image cms">
+                                    </div>
+                                    <div class="uk-card-body ">
+                                        <h3 class="uk-card-title">CMS Silex</h3>
+                                        <p>Reproduction d'un CMS avec la librairie Silex au sein de la code académie.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-section background-color-primary uk-section-small" id="contact">
+            <div class="uk-container">
+
+                <div class="uk-grid-large uk-flex-center uk-grid">
+                    <div class="uk-width-auto">
+                        <a href="mailto:dahmouni_amir@hotmail.fr" uk-tooltip="dahmouni_amir@hotmail.fr" uk-icon="icon: mail"></a>
+                    </div>
+                    <div class="uk-width-auto">
+                        <a href="tel:+216 26 580 724" uk-icon="icon: receiver" uk-tooltip="000" ></a>
+                    </div>
+                    <div class="uk-width-auto">
+                        <a href="https://www.linkedin.com/in/amir-dahmouni/" target="_blank" uk-icon="icon: linkedin"></a>
+                    </div>
+                    <div class="uk-width-auto">
+                        <a href="https://github.com/AmirDahmouni" target="_blank" uk-icon="icon: github"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+                crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
